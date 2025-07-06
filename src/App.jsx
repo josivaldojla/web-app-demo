@@ -52,13 +52,24 @@ function App() {
               <div className="text-6xl font-bold text-blue-600 mb-4">
                 {count}
               </div>
-              <Button 
-                onClick={handleClick}
-                size="lg"
-                className="mb-4"
-              >
-                Incrementar Contador
-              </Button>
+              <div className="flex gap-2 justify-center mb-4">
+                <Button 
+                  onClick={handleClick}
+                  size="lg"
+                >
+                  Incrementar Contador
+                </Button>
+                <Button 
+                  onClick={() => {
+                    setCount(0)
+                    setLastUpdate(new Date().toLocaleString('pt-BR'))
+                  }}
+                  variant="outline"
+                  size="lg"
+                >
+                  Reset
+                </Button>
+              </div>
               <p className="text-sm text-gray-500">
                 Última atualização: {lastUpdate}
               </p>
