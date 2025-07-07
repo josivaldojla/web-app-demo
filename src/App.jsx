@@ -49,7 +49,7 @@ function App() {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <div className="text-6xl font-bold text-red-500 mb-4">
+              <div className="text-6xl font-bold text-white mb-4">
                 {count}
               </div>
               <div className="flex gap-2 justify-center mb-4">
