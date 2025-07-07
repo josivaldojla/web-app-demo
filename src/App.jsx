@@ -70,7 +70,7 @@ function App() {
                   Reset
                 </Button>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-red-500">
                 Última atualização: {lastUpdate}
               </p>
             </CardContent>
